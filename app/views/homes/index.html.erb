@@ -1,10 +1,14 @@
 <div class="home-nav-bar">
   <div class="sign-in">
-    <%= link_to "Sign Up", new_user_registration_path, class: "sign-up" %>
-    <% if signed_in? %>
-      <%= link_to "Sign Out", destroy_user_session_path, method: :delete, class: "sign-up" %>
-    <% else %>
-      <%= link_to "Sign In", new_user_session_path, class: "sign-up" %>
-    <% end %>
+    <div>
+      <%= link_to "Sign Up", new_user_registration_path, class: "sign-up" %>
+    </div>
+    <div>
+      <% if signed_in? %>
+        <%= link_to "Sign Out", destroy_user_session_path, method: :delete, class: "sign-up" %>
+      <% else %>
+        <%= link_to "Sign In", new_user_session_path, class: "sign-up" %>
+      <% end %>
+    </div>
   </div>
 </div>

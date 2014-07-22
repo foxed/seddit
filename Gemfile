@@ -9,6 +9,7 @@ gem 'turbolinks'
 gem 'jbuilder', '~> 1.2'
 gem 'devise'
 gem 'bourbon'
+gem 'neat'
 
 group :development, :test do
  gem 'debugger'
