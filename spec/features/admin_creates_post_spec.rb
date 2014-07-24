@@ -15,14 +15,12 @@ feature "Admin creates post" do
     "form"
   end
 
-  #test for title and content and user
-
-  scenario "post has title input" do
+  scenario "post has title field" do
     visit '/posts/new'
     expect(page).to have_content "Title"
   end
 
-  scenario "post has content input" do
+  scenario "post has content field" do
     visit '/posts/new'
     expect(page).to have_content "Content"
   end
