@@ -21,7 +21,7 @@ describe Post, :type => :model do
       expect(post).to be_invalid
     end
 
-    it 'does not content' do
+    it 'does not have content' do
       user = User.create(username: "Bob", id: 2)
       post = Post.create(title: "Hey", user: user)
       expect(post).to be_invalid
