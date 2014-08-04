@@ -5,7 +5,7 @@ feature "User signs in" do
     user = create(:user)
     user_signs_in(user.email, user.password)
 
-    expect(page).to have_content 'Sign in'
+    expect(page).to have_content 'Sign Out'
   end
 
   def user_signs_in(email, password)
