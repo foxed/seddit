@@ -1,0 +1,46 @@
+/*
+Syntax error: Invalid property: "Backtrace:" (no value).
+        on line 4 of public/stylesheets
+
+1: /*
+2: Errno::ENOENT: No such file or directory - public/stylesheets
+3: 
+4: Backtrace:
+5: /Users/afox/.rvm/gems/ruby-1.9.3-p547/gems/sass-3.2.19/lib/sass/plugin/compiler.rb:360:in `read'
+6: /Users/afox/.rvm/gems/ruby-1.9.3-p547/gems/sass-3.2.19/lib/sass/plugin/compiler.rb:360:in `update_stylesheet'
+7: /Users/afox/.rvm/gems/ruby-1.9.3-p547/gems/sass-3.2.19/lib/sass/plugin/compiler.rb:203:in `block in update_stylesheets'
+8: /Users/afox/.rvm/gems/ruby-1.9.3-p547/gems/sass-3.2.19/lib/sass/plugin/compiler.rb:201:in `each'
+9: /Users/afox/.rvm/gems/ruby-1.9.3-p547/gems/sass-3.2.19/lib/sass/plugin/compiler.rb:201:in `update_stylesheets'
+
+Backtrace:
+public/stylesheets:4
+/Users/afox/.rvm/gems/ruby-1.9.3-p547/gems/sass-3.2.19/lib/sass/engine.rb:614:in `parse_property'
+/Users/afox/.rvm/gems/ruby-1.9.3-p547/gems/sass-3.2.19/lib/sass/engine.rb:597:in `parse_property_or_rule'
+/Users/afox/.rvm/gems/ruby-1.9.3-p547/gems/sass-3.2.19/lib/sass/engine.rb:578:in `parse_line'
+/Users/afox/.rvm/gems/ruby-1.9.3-p547/gems/sass-3.2.19/lib/sass/engine.rb:471:in `build_tree'
+/Users/afox/.rvm/gems/ruby-1.9.3-p547/gems/sass-3.2.19/lib/sass/engine.rb:490:in `block in append_children'
+/Users/afox/.rvm/gems/ruby-1.9.3-p547/gems/sass-3.2.19/lib/sass/engine.rb:489:in `each'
+/Users/afox/.rvm/gems/ruby-1.9.3-p547/gems/sass-3.2.19/lib/sass/engine.rb:489:in `append_children'
+/Users/afox/.rvm/gems/ruby-1.9.3-p547/gems/sass-3.2.19/lib/sass/engine.rb:345:in `_to_tree'
+/Users/afox/.rvm/gems/ruby-1.9.3-p547/gems/sass-3.2.19/lib/sass/engine.rb:315:in `_render'
+/Users/afox/.rvm/gems/ruby-1.9.3-p547/gems/sass-3.2.19/lib/sass/engine.rb:262:in `render'
+/Users/afox/.rvm/gems/ruby-1.9.3-p547/gems/sass-3.2.19/lib/sass/plugin/compiler.rb:362:in `update_stylesheet'
+/Users/afox/.rvm/gems/ruby-1.9.3-p547/gems/sass-3.2.19/lib/sass/plugin/compiler.rb:203:in `block in update_stylesheets'
+/Users/afox/.rvm/gems/ruby-1.9.3-p547/gems/sass-3.2.19/lib/sass/plugin/compiler.rb:201:in `each'
+/Users/afox/.rvm/gems/ruby-1.9.3-p547/gems/sass-3.2.19/lib/sass/plugin/compiler.rb:201:in `update_stylesheets'
+/Users/afox/.rvm/gems/ruby-1.9.3-p547/gems/sass-3.2.19/lib/sass/plugin/compiler.rb:235:in `watch'
+/Users/afox/.rvm/gems/ruby-1.9.3-p547/gems/sass-3.2.19/lib/sass/plugin.rb:107:in `method_missing'
+/Users/afox/.rvm/gems/ruby-1.9.3-p547/gems/sass-3.2.19/lib/sass/exec.rb:463:in `watch_or_update'
+/Users/afox/.rvm/gems/ruby-1.9.3-p547/gems/sass-3.2.19/lib/sass/exec.rb:326:in `process_result'
+/Users/afox/.rvm/gems/ruby-1.9.3-p547/gems/sass-3.2.19/lib/sass/exec.rb:41:in `parse'
+/Users/afox/.rvm/gems/ruby-1.9.3-p547/gems/sass-3.2.19/lib/sass/exec.rb:21:in `parse!'
+/Users/afox/.rvm/gems/ruby-1.9.3-p547/gems/sass-3.2.19/bin/sass:13:in `<top (required)>'
+/Users/afox/.rvm/gems/ruby-1.9.3-p547/bin/sass:19:in `load'
+/Users/afox/.rvm/gems/ruby-1.9.3-p547/bin/sass:19:in `<main>'
+/Users/afox/.rvm/gems/ruby-1.9.3-p547/bin/ruby_executable_hooks:15:in `eval'
+/Users/afox/.rvm/gems/ruby-1.9.3-p547/bin/ruby_executable_hooks:15:in `<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Syntax error: Invalid property: \"Backtrace:\" (no value).\A         on line 4 of public/stylesheets\A \A 1: /*\A 2: Errno::ENOENT: No such file or directory - public/stylesheets\A 3: \A 4: Backtrace:\A 5: /Users/afox/.rvm/gems/ruby-1.9.3-p547/gems/sass-3.2.19/lib/sass/plugin/compiler.rb:360:in `read'\A 6: /Users/afox/.rvm/gems/ruby-1.9.3-p547/gems/sass-3.2.19/lib/sass/plugin/compiler.rb:360:in `update_stylesheet'\A 7: /Users/afox/.rvm/gems/ruby-1.9.3-p547/gems/sass-3.2.19/lib/sass/plugin/compiler.rb:203:in `block in update_stylesheets'\A 8: /Users/afox/.rvm/gems/ruby-1.9.3-p547/gems/sass-3.2.19/lib/sass/plugin/compiler.rb:201:in `each'\A 9: /Users/afox/.rvm/gems/ruby-1.9.3-p547/gems/sass-3.2.19/lib/sass/plugin/compiler.rb:201:in `update_stylesheets'"; }

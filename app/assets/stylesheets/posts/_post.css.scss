@@ -1,0 +1,15 @@
+.post-title {
+  @include outer-container;
+  font-style: bold;
+  font-size: 20px;
+  margin-bottom: 15px;
+  display: table;
+  width: 70%;
+}
+
+.post-content {
+  margin-bottom: 40px;
+  border-bottom: 1px solid black;
+  display: table;
+  width: 70%;
+}

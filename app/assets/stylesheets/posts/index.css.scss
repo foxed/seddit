@@ -1,0 +1,10 @@
+.post-container {
+  @include outer-container;
+  @include shift(4);
+  line-height: 220%;
+
+  h2 {
+    border-bottom: 1px solid green;
+    width: 40%;
+  }
+}
