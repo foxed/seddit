@@ -5,11 +5,16 @@ FactoryGirl.define do
     username 'Bob'
     email 'blah@blah.com'
     password 'password'
+
+    factory :admin do
+      admin true
+    end
   end
 
-  def login
-    user = FactoryGirl.create(:user)
-    login_as user, scope: user
+  factory :post do
+    title 'Hey'
+    content 'Contentttttt'
     user
   end
+
 end

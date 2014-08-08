@@ -14,11 +14,12 @@ class PostsController < ApplicationController
   end
 
   def create
-    post = current_user.posts.build(post_params)
-    if post.save
+    post = current_user.posts.create(post_params)
+    if post.valid?
       flash[:notice] = "Your post has been saved!"
+    else
+      flash[:error] = "Your post has invalid credentials."
     end
-
     redirect_to posts_path
   end
 
