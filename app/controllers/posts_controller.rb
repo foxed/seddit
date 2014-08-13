@@ -1,5 +1,6 @@
 class PostsController < ApplicationController
   before_action :authenticate_user!
+  before_filter :ensure_user_is_admin, only: [:create, :new]
 
   def index
     @posts = Post.all

@@ -2,7 +2,7 @@ require 'rails_helper'
 
 feature "Admin creates post" do
   before do
-    login
+    login_as_admin
     visit new_post_path
   end
 
@@ -31,13 +31,20 @@ feature "Unauthorized person visits new post path" do
   end
 
   scenario "as a non-admin User" do
+    login_as_user
     visit new_post_path
-    expect(page).to have_content "You must be an admin to create a most."
+    expect(page).to have_content "You must be an admin to perform this action."
   end
 end
 
-def login
+def login_as_admin
   user = create :admin
+  login_as user, scope: :user
+  user
+end
+
+def login_as_user
+  user = create :user
   login_as user, scope: :user
   user
 end

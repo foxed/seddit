@@ -16,5 +16,4 @@ FactoryGirl.define do
     content 'Contentttttt'
     user
   end
-
 end
