@@ -1,0 +1,13 @@
+.home-nav-bar {
+  @include outer-container;
+  padding-top: 150px;
+
+  .sign-in {
+    @include columns(1);
+    a {
+      font-size: 26px;
+      text-decoration: none;
+      color: red;
+    }
+  }
+}

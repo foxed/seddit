@@ -9,10 +9,12 @@ gem 'turbolinks'
 gem 'jbuilder', '~> 1.2'
 gem 'devise'
 gem 'bourbon'
+gem 'neat'
+gem 'factory_girl_rails'
 
 group :development, :test do
- gem 'debugger'
  gem 'rspec-rails', '~> 3.0.0'
+ gem 'capybara'
 end
 
 group :doc do
